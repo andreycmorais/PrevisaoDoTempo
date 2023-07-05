@@ -54,6 +54,7 @@ axios
       sexta.innerHTML = `Sexta ${response.data[index].week[4].min}º ${response.data[index].week[4].max}º`;
     }
     console.log(response);
+    console.log("batata");
   })
   .catch(function (error) {
     console.log(error);
