@@ -24,6 +24,18 @@ axios
     vento.innerHTML = `Vento ${response.data[0].now.wind}km/h`;
     let minmax = document.querySelector(".detalhes");
     minmax.innerHTML = `Min ${response.data[0].today.min}º Max ${response.data[0].today.max}º`;
+
+    let segunda = document.querySelector("#segunda");
+    segunda.innerHTML = `Segunda ${response.data[0].week[0].min}º ${response.data[0].week[0].max}º`;
+    let terca = document.querySelector("#terca");
+    terca.innerHTML = `Terça ${response.data[0].week[1].min}º ${response.data[0].week[1].max}º`;
+    let quarta = document.querySelector("#quarta");
+    quarta.innerHTML = `Quarta ${response.data[0].week[2].min}º ${response.data[0].week[2].max}º`;
+    let quinta = document.querySelector("#quinta");
+    quinta.innerHTML = `Quinta ${response.data[0].week[3].min}º ${response.data[0].week[3].max}º`;
+    let sexta = document.querySelector("#sexta");
+    sexta.innerHTML = `Sexta ${response.data[0].week[4].min}º ${response.data[0].week[4].max}º`;
+
     console.log(response);
   })
   .catch(function (error) {
