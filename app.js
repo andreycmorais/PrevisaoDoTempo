@@ -11,8 +11,20 @@ axios
       );
       h5.appendChild(text); // coloca o text como filho de h5
     }
+    now = response.data[0].now;
+    console.log(now);
+
+    let tempo = document.querySelector("#tempo");
+    tempo.innerHTML = `${response.data[0].now.temp}º ${response.data[0].now.desc}`;
+    let sensacao = document.querySelector("#sensacao");
+    sensacao.innerHTML = `Sensação ${response.data[0].now.sensation}º`;
+    let umidade = document.querySelector("#umidade");
+    umidade.innerHTML = `Umidade ${response.data[0].now.humidity}%`;
+    let vento = document.querySelector("#vento");
+    vento.innerHTML = `Vento ${response.data[0].now.wind}km/h`;
+    let minmax = document.querySelector(".detalhes");
+    minmax.innerHTML = `Min ${response.data[0].today.min}º Max ${response.data[0].today.max}º`;
     console.log(response);
-    console.log(response.data);
   })
   .catch(function (error) {
     console.log(error);
