@@ -10,32 +10,49 @@ axios
         `${response.data[i].today.min}º ${response.data[i].today.max}º ${response.data[i].name}`
       );
       h5.appendChild(text); // coloca o text como filho de h5
+      h5.addEventListener("click", function () {
+        atualizaDetalhesCidade(i);
+      });
     }
     now = response.data[0].now;
     console.log(now);
 
-    let tempo = document.querySelector("#tempo");
-    tempo.innerHTML = `${response.data[0].now.temp}º ${response.data[0].now.desc}`;
-    let sensacao = document.querySelector("#sensacao");
-    sensacao.innerHTML = `Sensação ${response.data[0].now.sensation}º`;
-    let umidade = document.querySelector("#umidade");
-    umidade.innerHTML = `Umidade ${response.data[0].now.humidity}%`;
-    let vento = document.querySelector("#vento");
-    vento.innerHTML = `Vento ${response.data[0].now.wind}km/h`;
-    let minmax = document.querySelector(".detalhes");
-    minmax.innerHTML = `Min ${response.data[0].today.min}º Max ${response.data[0].today.max}º`;
+    function atualizaDetalhesCidade(index) {
+      console.log(index);
 
-    let segunda = document.querySelector("#segunda");
-    segunda.innerHTML = `Segunda ${response.data[0].week[0].min}º ${response.data[0].week[0].max}º`;
-    let terca = document.querySelector("#terca");
-    terca.innerHTML = `Terça ${response.data[0].week[1].min}º ${response.data[0].week[1].max}º`;
-    let quarta = document.querySelector("#quarta");
-    quarta.innerHTML = `Quarta ${response.data[0].week[2].min}º ${response.data[0].week[2].max}º`;
-    let quinta = document.querySelector("#quinta");
-    quinta.innerHTML = `Quinta ${response.data[0].week[3].min}º ${response.data[0].week[3].max}º`;
-    let sexta = document.querySelector("#sexta");
-    sexta.innerHTML = `Sexta ${response.data[0].week[4].min}º ${response.data[0].week[4].max}º`;
+      let cidade = document.querySelector("#cidade");
+      cidade.innerHTML = `${response.data[index].name} - Brasil`;
 
+      let tempo = document.querySelector("#tempo");
+      tempo.innerHTML = `${response.data[index].now.temp}º ${response.data[index].now.desc}`;
+
+      let sensacao = document.querySelector("#sensacao");
+      sensacao.innerHTML = `Sensação ${response.data[index].now.sensation}º`;
+
+      let umidade = document.querySelector("#umidade");
+      umidade.innerHTML = `Umidade ${response.data[index].now.humidity}%`;
+
+      let vento = document.querySelector("#vento");
+      vento.innerHTML = `Vento ${response.data[index].now.wind}km/h`;
+
+      let minmax = document.querySelector(".detalhes");
+      minmax.innerHTML = `Min ${response.data[index].today.min}º Max ${response.data[index].today.max}º`;
+
+      let segunda = document.querySelector("#segunda");
+      segunda.innerHTML = `Segunda ${response.data[index].week[0].min}º ${response.data[index].week[0].max}º`;
+
+      let terca = document.querySelector("#terca");
+      terca.innerHTML = `Terça ${response.data[index].week[1].min}º ${response.data[index].week[1].max}º`;
+
+      let quarta = document.querySelector("#quarta");
+      quarta.innerHTML = `Quarta ${response.data[index].week[2].min}º ${response.data[index].week[2].max}º`;
+
+      let quinta = document.querySelector("#quinta");
+      quinta.innerHTML = `Quinta ${response.data[index].week[3].min}º ${response.data[index].week[3].max}º`;
+
+      let sexta = document.querySelector("#sexta");
+      sexta.innerHTML = `Sexta ${response.data[index].week[4].min}º ${response.data[index].week[4].max}º`;
+    }
     console.log(response);
   })
   .catch(function (error) {
