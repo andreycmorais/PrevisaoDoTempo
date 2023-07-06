@@ -35,7 +35,9 @@
 }
 .fundoBranco {
   background-color: white;
-  color: gray;
+  color: rgba(0, 0, 0, 0.699);
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .cidade {
   text-align: left;
@@ -61,19 +63,35 @@
 }
 .sensacao {
   margin-left: 20px;
-}
-.vento {
-  margin-left: 20px;
   font-size: 20px;
+}
+.negrito {
+  font-weight: bold;
 }
 .dias {
   font-size: 20px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 4%;
+  padding-right: 6%;
 }
-.a {
+.semana {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.temperatura {
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.tempDaSemana {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 6%;
+  margin-left: 16px;
 }
