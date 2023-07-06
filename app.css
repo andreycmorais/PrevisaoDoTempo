@@ -4,6 +4,9 @@
   font-size: 150%;
   margin: 0;
 }
+.container {
+  width: 100%;
+}
 .titulos {
   color: white;
   font-size: 30px;
@@ -23,21 +26,14 @@
   margin-left: 20px;
 }
 .dados {
-  margin-right: 130px;
   margin-left: 20px;
-}
-.linha {
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: #dcdcdc;
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
 }
 .fundoBranco {
   background-color: white;
   color: rgba(0, 0, 0, 0.699);
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .cidade {
   text-align: left;
