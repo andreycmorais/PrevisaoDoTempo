@@ -55,13 +55,6 @@
   margin-left: 20px;
   font-size: 17px;
 }
-.sensacao {
-  margin-left: 20px;
-  font-size: 20px;
-}
-.negrito {
-  font-weight: bold;
-}
 .dias {
   font-size: 20px;
   font-weight: bold;
@@ -69,6 +62,9 @@
   justify-content: space-between;
   padding-left: 4%;
   padding-right: 6%;
+}
+.sensacao {
+  font-size: 20px;
 }
 .semana {
   font-size: 20px;
@@ -86,4 +82,10 @@
   padding-left: 4%;
   padding-right: 6%;
   margin-left: 16px;
+}
+.coluna {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
 }

@@ -27,13 +27,13 @@ axios
       tempo.innerHTML = `${response.data[index].now.temp}º ${response.data[index].now.desc}`;
 
       let sensacao = document.querySelector("#sensacao");
-      sensacao.innerHTML = `Sensação ${response.data[index].now.sensation}º`;
+      sensacao.innerHTML = `${response.data[index].now.sensation}º`;
 
       let umidade = document.querySelector("#umidade");
-      umidade.innerHTML = `Umidade ${response.data[index].now.humidity}%`;
+      umidade.innerHTML = `${response.data[index].now.humidity}%`;
 
       let vento = document.querySelector("#vento");
-      vento.innerHTML = `Vento ${response.data[index].now.wind}km/h`;
+      vento.innerHTML = `${response.data[index].now.wind}km/h`;
 
       let minmax = document.querySelector(".detalhes");
       minmax.innerHTML = `Min ${response.data[index].today.min}º Max ${response.data[index].today.max}º`;
