@@ -8,51 +8,54 @@
     <title>Previsão do Tempo</title>
   </head>
 
-  <body class="container">
-      <div class="titulos">Previsão do Tempo</div>
+  <body>
+    <div class="container" id="container">
+      <span class="titulos">Previsão do Tempo</span>
       <div class="fundoBranco">
         <div class="cidade" id="cidade">Niterói, RJ - Brasil</div>
         <div id="tempo" class="tempo">20º Nublado</div>
-      <div class="coluna">
-        <span class="sensacao">
-          Min <b class="negrito">16º</b> Máx <b class="negrito">25º</b>
-        </span>
-        <span class="sensacao">
-          Sensação <b class="negrito" id="sensacao">19º</b>
-        </span>
-      </div>
-      <div class="coluna">
-        <span class="sensacao">
-          Vento <b class="negrito" id="vento">18km/h</b>
-        </span>
-        <span class="sensacao">
-          Umidade <b class="negrito" id="umidade">89%</b>
-        </span>
-      </div>
-        <hr class="linhaLaranja" />
-        <div class="dias">
-          <div class="semana" id="segunda">Segunda
-            <div class="temperatura" id="segunda">17º 24º</div>
-          </div>
-          <div class="semana" id="terca">Terça
-            <div class="temperatura" id="terca">18º 26º</div>
-          </div>
-          <div class="semana" id="quarta">Quarta
-            <div class="temperatura" id="quarta">18º 28º</div>
-          </div>
-          <div class="semana" id="quinta">Quinta
-            <div class="temperatura" id="quinta">19º 30º</div>
-          </div>
-          <div class="semana" id="sexta">Sexta
-            <div class="temperatura" id="sexta">23º 35º</div>
-          </div>
+        <div class="coluna">
+          <span class="sensacao">
+            Min <b class="negrito">16º</b> Máx <b class="negrito">25º</b>
+          </span>
+          <span class="sensacao">
+            Sensação <b class="negrito" id="sensacao">19º</b>
+          </span>
+        </div>
+        <div class="coluna">
+          <span class="sensacao">
+            Vento <b class="negrito" id="vento">18km/h</b>
+          </span>
+          <span class="sensacao">
+            Umidade <b class="negrito" id="umidade">89%</b>
+          </span>
+        </div>
+          <hr class="linhaLaranja" />
+          <div class="dias">
+            <div class="sensacao" id="segunda">Segunda
+              <div class="temperatura" id="segunda">17º 24º</div>
+            </div>
+            <div class="sensacao" id="terca">Terça
+              <div class="temperatura" id="terca">18º 26º</div>
+            </div>
+            <div class="sensacao" id="quarta">Quarta
+              <div class="temperatura" id="quarta">18º 28º</div>
+            </div>
+            <div class="sensacao" id="quinta">Quinta
+              <div class="temperatura" id="quinta">19º 30º</div>
+            </div>
+            <div class="sensacao" id="sexta">Sexta
+              <div class="temperatura" id="sexta">23º 35º</div>
+            </div>
         </div>
       </div>
-        <div><h3 class="titulos">Capitais</h3>
+        <div>
+          <h3 class="titulos">Capitais</h3>
           <div class="minmax">Min Máx</div>
           <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
           <script src="app.js"></script>
         </div>
       </div>
+    </div>
   </body>
 </html>
