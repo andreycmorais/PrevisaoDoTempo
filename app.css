@@ -18,6 +18,16 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.titulo {
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .minmax {
   font-size: 80%;
@@ -83,6 +93,6 @@ body {
 .coluna {
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
