@@ -11,17 +11,7 @@ body {
   width: 100%;
   max-width: 600px;
 }
-.titulo {
-  color: white;
-  font-size: 30px;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-}
-.tituloMenor {
+.titulos {
   color: white;
   font-size: 30px;
   margin-left: 20px;
@@ -93,9 +83,6 @@ body {
 .coluna {
   display: flex;
   justify-content: space-between;
-  padding-left: 6%;
-  padding-right: 6%;
-}
-.invisivel {
-  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
 }

@@ -12,8 +12,6 @@ axios
       h5.appendChild(text); // coloca o text como filho de h5
       h5.addEventListener("click", function () {
         atualizaDetalhesCidade(i);
-        let divFundoBranco = document.querySelector(".fundoBranco");
-        divFundoBranco.classList.remove("invisivel");
       });
     }
     now = response.data[0].now;
