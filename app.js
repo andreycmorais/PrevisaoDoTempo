@@ -37,8 +37,11 @@ axios
       let vento = document.querySelector("#vento");
       vento.innerHTML = `${response.data[index].now.wind}km/h`;
 
-      //let minmax = document.querySelector(".detalhes");
-      //minmax.innerHTML = `Min ${response.data[index].today.min}º Max ${response.data[index].today.max}º`;
+      let min = document.querySelector("#min");
+      min.innerHTML = `${response.data[index].today.min}º`;
+
+      let max = document.querySelector("#max");
+      max.innerHTML = `${response.data[index].today.max}º`;
 
       let segunda = document.querySelector("#segunda");
       segunda.innerHTML = `${response.data[index].week[0].min}º ${response.data[index].week[0].max}º`;
