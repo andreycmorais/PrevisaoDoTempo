@@ -71,7 +71,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 4%;
-  padding-right: 6%;
+  padding-right: 4%;
 }
 .sensacao {
   font-size: 20px;
@@ -95,4 +95,7 @@ body {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+}
+.invisivel {
+  display: none;
 }

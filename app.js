@@ -12,6 +12,8 @@ axios
       h5.appendChild(text); // coloca o text como filho de h5
       h5.addEventListener("click", function () {
         atualizaDetalhesCidade(i);
+        let divFundoBranco = document.querySelector(".fundoBranco");
+        divFundoBranco.classList.remove("invisivel");
       });
     }
     now = response.data[0].now;
@@ -35,23 +37,23 @@ axios
       let vento = document.querySelector("#vento");
       vento.innerHTML = `${response.data[index].now.wind}km/h`;
 
-      let minmax = document.querySelector(".detalhes");
-      minmax.innerHTML = `Min ${response.data[index].today.min}º Max ${response.data[index].today.max}º`;
+      //let minmax = document.querySelector(".detalhes");
+      //minmax.innerHTML = `Min ${response.data[index].today.min}º Max ${response.data[index].today.max}º`;
 
       let segunda = document.querySelector("#segunda");
-      segunda.innerHTML = `Segunda ${response.data[index].week[0].min}º ${response.data[index].week[0].max}º`;
+      segunda.innerHTML = `${response.data[index].week[0].min}º ${response.data[index].week[0].max}º`;
 
       let terca = document.querySelector("#terca");
-      terca.innerHTML = `Terça ${response.data[index].week[1].min}º ${response.data[index].week[1].max}º`;
+      terca.innerHTML = `${response.data[index].week[1].min}º ${response.data[index].week[1].max}º`;
 
       let quarta = document.querySelector("#quarta");
-      quarta.innerHTML = `Quarta ${response.data[index].week[2].min}º ${response.data[index].week[2].max}º`;
+      quarta.innerHTML = `${response.data[index].week[2].min}º ${response.data[index].week[2].max}º`;
 
       let quinta = document.querySelector("#quinta");
-      quinta.innerHTML = `Quinta ${response.data[index].week[3].min}º ${response.data[index].week[3].max}º`;
+      quinta.innerHTML = `${response.data[index].week[3].min}º ${response.data[index].week[3].max}º`;
 
       let sexta = document.querySelector("#sexta");
-      sexta.innerHTML = `Sexta ${response.data[index].week[4].min}º ${response.data[index].week[4].max}º`;
+      sexta.innerHTML = `${response.data[index].week[4].min}º ${response.data[index].week[4].max}º`;
     }
     console.log(response);
   })
