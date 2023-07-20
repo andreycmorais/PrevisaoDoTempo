@@ -8,53 +8,54 @@
     <title>Previsão do Tempo</title>
   </head>
 
-  <body class="fundo">
-    <div class="titulos">Previsão do Tempo</div>
-    <div class="fundoBranco">
-      <div class="cidade" id="cidade">Niterói, RJ - Brasil</div>
-      <div id="tempo" class="tempo">20º Nublado</div>
-      <div class="detalhes">Min <b>16º</b> Máx <b>25º</b></div>
-      <span class="sensacao" id="sensacao">Sensação <b>19º</b></span>
-      <span class="vento" id="vento">Vento <b>18km/h</b></span>
-      <span class="sensacao" id="umidade">Umidade <b>89%</b></span>
-      <hr class="linhaLaranja" />
-      <div class="dias">
-        <div class="geral" id="segunda">
-          Segunda
-          <div class="a" id="segunda">17º 24º</div>
+  <body>
+    <div class="container" id="container">
+      <span class="tituloPrincipal">Previsão do Tempo</span>
+      <div class="fundoBranco invisivel">
+        <div class="cidade" id="cidade">Niterói, RJ - Brasil</div>
+        <div id="tempo" class="tempo">20º Nublado</div>
+        <div class="coluna">
+          <span class="sensacao">
+            Min <b id="min">16º</b> Máx <b id="max">25º</b>
+          </span>
+          <span class="sensacao">
+            Sensação <b id="sensacao">19º</b>
+          </span>
         </div>
-        <div class="geral" id="terca">
-          Terça
-          <div class="a" id="terca">18º 26º</div>
+        <div class="coluna">
+          <span class="sensacao">
+            Vento <b id="vento">18km/h</b>
+          </span>
+          <span class="sensacao">
+            Umidade <b id="umidade">89%</b>
+          </span>
         </div>
-        <div class="geral" id="quarta">
-          Quarta
-          <div class="a" id="quarta">18º 28º</div>
+          <hr class="linhaLaranja" />
+          <div class="dias">
+            <div class="sensacao">Segunda
+              <div class="temperatura" id="segunda">17º 24º</div>
+            </div>
+            <div class="sensacao">Terça
+              <div class="temperatura" id="terca">18º 26º</div>
+            </div>
+            <div class="sensacao">Quarta
+              <div class="temperatura" id="quarta">18º 28º</div>
+            </div>
+            <div class="sensacao">Quinta
+              <div class="temperatura" id="quinta">19º 30º</div>
+            </div>
+            <div class="sensacao">Sexta
+              <div class="temperatura" id="sexta">23º 35º</div>
+            </div>
         </div>
-        <div class="geral" id="quinta">
-          Quinta
-          <div class="a" id="quinta">19º 30º</div>
-        </div>
-        <div class="geral" id="sexta">
-          Sexta
-          <div class="a" id="sexta">23º 35º</div>
+      </div>
+        <div>
+          <h3 class="titulo">Capitais</h3>
+          <div class="minmax">Min Máx</div>
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+          <script src="app.js"></script>
         </div>
       </div>
     </div>
-    <hr class="linha" />
-    <h3 class="titulos">Capitais</h3>
-    <div class="minmax">Min Máx</div>
-    <!--<h5 class="dados">18º 27º Rio de Janeiro</h5>
-    <h5 class="dados">14º 22º São Paulo</h5>
-    <h5 class="dados">21º 32º Belo Horizonte</h5>
-    <h5 class="dados">24º 37º Brasília</h5>
-    <h5 class="dados">24º 37º Belém</h5>
-    <h5 class="dados">23º 37º Salvador</h5>
-    <h5 class="dados">5º 14º Curitiba</h5>
-    <h5 class="dados">21º 32º Fortaleza</h5>
-    <h5 class="dados">24º 37º Manaus</h5>
-    <h5 class="dados">28º 40º João Pessoa</h5>-->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

@@ -1,10 +1,27 @@
-.fundo {
+body {
   background-color: orange;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 150%;
   margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.titulos {
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+.tituloPrincipal {
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.titulo {
   color: white;
   font-size: 30px;
   margin-left: 20px;
@@ -12,30 +29,20 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
-.pesquisa {
-  width: 300px;
-  height: 30px;
-  text-align: center;
-  margin-left: 10px;
-}
 .minmax {
   font-size: 80%;
   margin-left: 20px;
 }
 .dados {
-  margin-right: 130px;
   margin-left: 20px;
-}
-.linha {
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: #dcdcdc;
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
 }
 .fundoBranco {
   background-color: white;
-  color: gray;
+  color: rgba(0, 0, 0, 0.699);
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .cidade {
   text-align: left;
@@ -56,14 +63,6 @@
   align-items: center;
 }
 .detalhes {
-  margin-left: 20px;
-  font-size: 17px;
-}
-.sensacao {
-  margin-left: 20px;
-}
-.vento {
-  margin-left: 20px;
   font-size: 20px;
 }
 .dias {
@@ -71,9 +70,32 @@
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
-.a {
+.sensacao {
+  font-size: 20px;
+}
+.temperatura {
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.tempDaSemana {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 6%;
+  margin-left: 16px;
+}
+.coluna {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.invisivel {
+  display: none;
 }
